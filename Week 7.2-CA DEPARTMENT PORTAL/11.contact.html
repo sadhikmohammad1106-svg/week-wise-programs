@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Department Information Portal</title>
+  <link rel="stylesheet" href="5.style.css">
+  <link rel="stylesheet" href="12.style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="1.index.html"><span class="brand-icon">V</span><span><strong>VIGNAN</strong><small>DEPARTMENT OF COMPUTER APPLICATIONS</small></span></a>
+  <nav class="navbar">
+    <a href="1.index.html">Home</a><a href="2.about.html">About</a><a href="3.programs.html">Programs</a>
+    <a href="4.faculty.html">Faculty</a><a href="6.courses.html">Courses</a><a href="7.facilities.html">Facilities</a>
+    <a href="8.placements.html">Placements</a><a href="9.research.html">Research</a><a href="10.announcements.html">Notices</a><a class="active" href="11.contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <p class="eyebrow">WE ARE HERE TO HELP</p>
+  <h1>Get in <span>Touch</span></h1>
+  <p>Use the official university channels for department enquiries, academic information and student support.</p>
+  <a class="btn btn-primary" href="#contact-details">Contact Information</a>
+</section>
+
+<main class="content-wrap">
+  <section id="contact-details">
+    <div class="section-heading">
+      <p class="dark-eyebrow">CONTACT INFORMATION</p>
+      <h2>Connect with the Department</h2>
+    </div>
+
+    <div class="info-grid">
+      <article class="info-card">
+        <div class="info-icon">01</div>
+        <h3>University Website</h3>
+        <p>Visit the official university website for verified contact information and department details.</p>
+        <a href="https://vignan.ac.in/" target="_blank" rel="noopener">Visit Vignan University ↗</a>
+      </article>
+
+      <article class="info-card">
+        <div class="info-icon">02</div>
+        <h3>Department Information</h3>
+        <p>Refer to the official Department of Computer Applications page for available information.</p>
+        <a href="https://vignan.ac.in/newvignan/departments/depthome.php?deptid=sch3_dept4&school=sch3&deptnm=CA" target="_blank" rel="noopener">Open Department Page ↗</a>
+      </article>
+
+      <article class="info-card">
+        <div class="info-icon">03</div>
+        <h3>Campus Visit</h3>
+        <p>For in-person enquiries, confirm the correct office location and visiting hours through official channels.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div>
+      <p class="dark-eyebrow">SEND AN ENQUIRY</p>
+      <h2>Enquiry Form</h2>
+      <p>This is a front-end demonstration form for the HTML and CSS assignment. It does not send or store messages.</p>
+    </div>
+
+    <form class="enquiry-form" onsubmit="event.preventDefault(); document.getElementById('form-message').textContent='Demo only: your form is working, but no message was sent.';">
+      <label for="student-name">Full Name</label>
+      <input id="student-name" name="student-name" type="text" placeholder="Enter your full name" required>
+
+      <label for="student-email">Email Address</label>
+      <input id="student-email" name="student-email" type="email" placeholder="Enter your email address" required>
+
+      <label for="enquiry-type">Enquiry Type</label>
+      <select id="enquiry-type" name="enquiry-type" required>
+        <option value="">Select an option</option>
+        <option>Academic Information</option>
+        <option>Courses and Programs</option>
+        <option>Facilities</option>
+        <option>Placement Information</option>
+        <option>Other</option>
+      </select>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your enquiry here..." required></textarea>
+
+      <button class="btn btn-primary" type="submit">Submit Enquiry</button>
+      <p id="form-message" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Department Information Portal | Web Technologies Project</p>
+  <div class="footer-links"><a href="1.index.html">Home</a><a href="2.about.html">About</a><a href="3.programs.html">Programs</a></div>
+  <p class="copyright">Student-designed educational portal.</p>
+</footer>
+
+</body>
+</html>

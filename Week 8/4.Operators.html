@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators</title>
+</head>
+<body>
+    <h2>JavaScript Operators</h2>
+    <div id="output"></div>
+    <script>
+        let a = 20;
+        let b = 4;
+        let result = "";
+
+        result+="a = " + a + ", b = " + b + "<br><br>";
+        result += "Arithmetic Operators:</b><br>";
+        result += "Addition: " + (a + b) + "<br>";
+        result += "Subtraction: " + (a - b) + "<br>";
+        result += "Multiplication: " + (a * b) + "<br>";
+        result += "Division: " + (a / b).toFixed(2) + "<br>";
+        result += "Modulus: " + (a % b) + "<br>";
+        result += "Exponentiation: " + (a ** b) + "<br><br>";
+
+        result += "Comparison Operators:</b><br>";
+        result += "Equal to: " + (a == b) + "<br>";
+        result += "Not equal to: " + (a != b) + "<br>";
+        result += "Greater than: " + (a > b) + "<br>";
+        result += "Less than: " + (a < b) + "<br>";
+        result += "Greater than or equal to: " + (a >= b) + "<br>";
+        result += "Less than or equal to: " + (a <= b) + "<br><br>";
+         
+        result += "Logical Operators:</b><br>";
+        let x = true;
+        let y = false;
+        result += "Logical AND: " + (x && y) + "<br>";
+        result += "Logical OR: " + (x || y) + "<br>";
+        result += "Logical NOT: " + (!y) + "<br>";
+
+        document.getElementById("output").innerHTML = result;
+    </script>
+</body>
+</html>

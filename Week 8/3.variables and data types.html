@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Data Types</title>
+</head>
+<body>
+   <h2>JavaScript Variables and Data Types</h2>
+   <div id="output"></div>
+   <script>
+       let name = "Mohammad Sadhik"; 
+       const age = 22;
+       let isStudent = true;
+       let marks;
+       let address = null;
+       let result="";
+       result+="Name= " + name + "("+typeof name+")<br>";
+         result+="Age= " + age + "("+typeof age+")<br>";
+            result+="Is Student= " + isStudent + "("+typeof isStudent+")<br>";
+            result+="Marks= " + marks + "("+typeof marks+")<br>";
+               result+="Address= " + address + "("+typeof address+")<br>";  
+       document.getElementById("output").innerHTML = result;
+   </script>
+</body>
+</html>

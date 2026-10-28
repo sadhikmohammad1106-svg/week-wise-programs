@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statements</title>
+</head>
+<body>
+    <h2>Grade Calculator</h2>
+    <div id="output"></div>
+    <script>
+        let marks = 95; // You can change this value to test different grades
+        let grade = "";
+
+        if (marks >= 90) {
+            grade = "A+";
+        } else if (marks >= 80) {
+            grade = "A";
+        } else if (marks >= 70) {
+            grade = "B";
+        } else if (marks >= 60) {
+            grade = "C";
+        } else {
+            grade = "Fail";
+        }    
+        let remarks;
+        switch (grade) {
+            case "A+":
+                remarks = "Excellent!";
+                break;
+            case "A":
+                remarks = "Very Good!";
+                break;
+            case "B":
+                remarks = "Good!";
+                break;
+            case "C":
+                remarks = "Average!";
+                break;
+            default:
+                remarks = "Needs Improvement!";
+        }
+
+        document.getElementById("output").innerHTML = "Marks: " + marks + "<br>Grade: " + grade + "<br>Remarks: " + remarks;
+    </script>
+</body>
+</html>
